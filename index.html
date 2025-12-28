@@ -1,102 +1,101 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafik Assubhan | Portofolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <style>
-    body { scroll-behavior: smooth; background: #0f172a; font-family: 'Poppins', sans-serif; }
-    a { transition: 0.3s; }
-    a:hover { transform: scale(1.05); }
-    .hero-gradient { background: linear-gradient(135deg, #0ea5e9, #0f172a); }
-    .floating-btn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #25d366;
-      color: #fff;
-      padding: 16px;
-      border-radius: 50%;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      z-index: 50;
-      font-size: 24px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafik Assubhan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background: linear-gradient(to bottom, #0f172a, #1e3a8a); color: #f8fafc; font-family: Arial, sans-serif; }
+        .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .card { transition: transform 0.3s, box-shadow 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        a { transition: color 0.3s; }
+        a:hover { color: #3b82f6; }
+    </style>
 </head>
-<body class="text-white">
+<body class="scroll-smooth">
 
-  <!-- Hero Section -->
-  <section class="hero-gradient h-screen flex flex-col justify-center items-center text-center px-6">
-    <h2 class="text-xl md:text-2xl font-light uppercase mb-4 tracking-widest" id="sr1">HELLO I AM</h2>
-    <h1 class="text-5xl md:text-7xl font-extrabold mb-6" id="sr2">Rafik Assubhan</h1>
-    <p class="max-w-2xl text-gray-200 text-lg md:text-xl" id="sr3">Web Enthusiast • Freelancer • Digital Creator</p>
-  </section>
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md py-4 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="text-xl font-bold tracking-widest">Rafik Assubhan</div>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#about" class="hover:text-blue-400">About Me</a>
+                <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
+                <a href="#contact" class="hover:text-blue-400">Social Media</a>
+            </div>
+        </div>
+    </nav>
 
-  <!-- About Me -->
-  <section class="py-24 px-6 max-w-4xl mx-auto" id="about">
-    <h2 class="text-4xl font-bold mb-6 border-l-4 border-blue-500 pl-4 inline-block" id="sr4">About Me</h2>
-    <p class="text-gray-300 text-lg md:text-xl leading-relaxed" id="sr5">
-      Saya adalah individu yang tertarik pada dunia <strong>Web, teknologi, dan digital</strong>. 
-      Berpengalaman membuat <strong>website sederhana, landing page, dan website bisnis</strong>.
-    </p>
-  </section>
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 animate-fade">HELLO I AM</h1>
+        <h2 class="text-4xl md:text-6xl font-bold text-blue-400 mb-6 animate-fade">Rafik Assubhan</h2>
+        <p class="text-lg md:text-xl text-gray-300 max-w-xl animate-fade">
+            Individu yang tertarik pada dunia Web, Teknologi, dan Digital. Berpengalaman membuat website sederhana, landing page, dan website bisnis.
+        </p>
+    </section>
 
-  <!-- Portfolio -->
-  <section class="py-24 px-6 max-w-6xl mx-auto" id="portfolio">
-    <h2 class="text-4xl font-bold mb-10 border-l-4 border-blue-500 pl-4 inline-block" id="sr6">Portofolio</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="sr7">
-      <div class="bg-zinc-800 p-6 rounded-xl hover:scale-105 transition shadow-lg">
-        <h3 class="font-bold text-xl mb-2">Website Hotel</h3>
-        <p>Landing page hotel modern & responsif.</p>
-      </div>
-      <div class="bg-zinc-800 p-6 rounded-xl hover:scale-105 transition shadow-lg">
-        <h3 class="font-bold text-xl mb-2">Website Gym</h3>
-        <p>Website promosi gym & fitness center.</p>
-      </div>
-      <div class="bg-zinc-800 p-6 rounded-xl hover:scale-105 transition shadow-lg">
-        <h3 class="font-bold text-xl mb-2">Website Pribadi</h3>
-        <p>Portofolio personal sederhana.</p>
-      </div>
-    </div>
-  </section>
+    <!-- About Me -->
+    <section id="about" class="py-24 container mx-auto px-6">
+        <h2 class="section-title text-blue-400 mb-6">About Me</h2>
+        <p class="text-gray-200 max-w-3xl animate-fade-up">
+            Saya adalah individu yang tertarik pada dunia web, teknologi, dan digital. Memiliki pengalaman dalam membuat website sederhana, landing page, dan website bisnis. Senang mempelajari hal baru dan terus meningkatkan skill saya.
+        </p>
+    </section>
 
-  <!-- Social Media -->
-  <section class="py-24 px-6 max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-900 rounded-3xl shadow-xl" id="contact">
-    <h2 class="text-4xl font-bold mb-6 border-l-4 border-white pl-4 inline-block" id="sr8">Social Media</h2>
-    <div class="space-y-4 text-gray-100 text-lg md:text-xl" id="sr9">
-      <p>📧 Email: <a href="mailto:rafikassubhan27@gmail.com" class="underline text-white hover:text-blue-300">rafikassubhan27@gmail.com</a></p>
-      <p>📱 WhatsApp: <a href="https://wa.me/6281331635631" class="underline text-white hover:text-blue-300">081331635631</a></p>
-      <p>📸 Instagram: <a href="https://instagram.com/its.raafik" class="underline text-white hover:text-blue-300">@its.raafik</a></p>
-    </div>
-  </section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-24 bg-gray-900/50">
+        <h2 class="section-title text-blue-400 mb-12 text-center">Portfolio</h2>
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="card bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-2">Mirabell Hotel</h3>
+                <p class="text-gray-300 mb-4">Website Hotel Profesional</p>
+                <a href="https://rafikassubhan27-glitch.github.io/Mirabell-hotel/" target="_blank" class="text-blue-400 font-bold hover:underline">Lihat Website</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="card bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-2">Fortis Fitness</h3>
+                <p class="text-gray-300 mb-4">Website Gym & Fitness Center</p>
+                <a href="https://fortisfitnees.netlify.app/" target="_blank" class="text-blue-400 font-bold hover:underline">Lihat Website</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="py-10 text-center text-gray-400">
-    © 2025 Rafik Assubhan. All rights reserved.
-  </footer>
+    <!-- Social Media -->
+    <section id="contact" class="py-24 container mx-auto px-6 text-center">
+        <h2 class="section-title text-blue-400 mb-12">Social Media</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+            <a href="mailto:rafikassubhan27@gmail.com" class="flex items-center gap-2 bg-gray-800 px-6 py-3 rounded-xl hover:bg-blue-600 transition">
+                <i class="fas fa-envelope text-xl"></i>
+                <span>Email Me</span>
+            </a>
+            <a href="https://instagram.com/its.raafik" target="_blank" class="flex items-center gap-2 bg-gray-800 px-6 py-3 rounded-xl hover:bg-blue-600 transition">
+                <i class="fab fa-instagram text-xl"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="https://wa.me/6281331635631" target="_blank" class="flex items-center gap-2 bg-green-600 px-6 py-3 rounded-xl hover:bg-green-700 transition">
+                <i class="fab fa-whatsapp text-xl"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </section>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/6281331635631" class="floating-btn" target="_blank" title="Chat WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-400">
+        &copy; 2025 Rafik Assubhan. All rights reserved.
+    </footer>
 
-  <!-- Font Awesome -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-
-  <!-- Scroll Reveal -->
-  <script>
-    ScrollReveal().reveal('#sr1', { delay: 200, origin: 'top', distance: '50px', duration: 1000 });
-    ScrollReveal().reveal('#sr2', { delay: 400, origin: 'bottom', distance: '50px', duration: 1000 });
-    ScrollReveal().reveal('#sr3', { delay: 600, origin: 'bottom', distance: '50px', duration: 1000 });
-    ScrollReveal().reveal('#sr4', { delay: 200, origin: 'left', distance: '50px', duration: 1000 });
-    ScrollReveal().reveal('#sr5', { delay: 400, origin: 'left', distance: '50px', duration: 1000 });
-    ScrollReveal().reveal('#sr6', { delay: 200, origin: 'left', distance: '50px', duration: 1000 });
-    ScrollReveal().reveal('#sr7', { delay: 400, origin: 'bottom', distance: '50px', duration: 1000 });
-    ScrollReveal().reveal('#sr8', { delay: 200, origin: 'left', distance: '50px', duration: 1000 });
-    ScrollReveal().reveal('#sr9', { delay: 400, origin: 'bottom', distance: '50px', duration: 1000 });
-  </script>
-
+    <!-- Scroll Reveal -->
+    <script>
+        ScrollReveal().reveal('.animate-fade', { duration: 1200, origin: 'bottom', distance: '50px' });
+        ScrollReveal().reveal('.animate-fade-up', { duration: 1200, origin: 'bottom', distance: '80px', delay: 200 });
+        ScrollReveal().reveal('.card', { duration: 1000, origin: 'bottom', distance: '50px', interval: 200 });
+    </script>
 </body>
 </html>
